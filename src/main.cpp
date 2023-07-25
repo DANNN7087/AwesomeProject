@@ -9,12 +9,16 @@
 #include "vex.h"
 
 using namespace vex;
+using signature = vision::signature;
+using code = vision::code;
 
 // A global instance of vex::brain used for printing to the V5 brain screen
 vex::brain       Brain;
 
-// define your global instances of motors and other devices here
-
+// VEXcode device constructors
+motor motorLeft = motor(PORT1, ratio18_1, true);
+motor motorRight = motor(PORT10, ratio18_1, false);
+motor motorArm = motor(PORT8, ratio18_1, false);
 
 int main() {
 
